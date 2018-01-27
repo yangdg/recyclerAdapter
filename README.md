@@ -1,8 +1,8 @@
-##recyclerAdapter
+## recyclerAdapter
 
 Android RecyclerView适用的通用adapter，在hongyang 的base-adapter基础上修改一些bug而成,例如加载更多，解决了院项目不满屏自动加载的问题。
 
-##截图
+## 截图
 多布局的情况
 
 <img src="img/device-2018-01-27-111422.png" width="300px"/>
@@ -11,7 +11,7 @@ Android RecyclerView适用的通用adapter，在hongyang 的base-adapter基础�
 
 <img src="img/device-2018-01-27-111530.png" width="300px"/>
 
-##使用
+## 使用
 
 基本使用方法参照[https://github.com/hongyangAndroid/baseAdapter](https://github.com/hongyangAndroid/baseAdapter)
 
