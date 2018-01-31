@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.novoda.bintray-release'//添加
 android {
     compileSdkVersion 25
     buildToolsVersion '25.0.0'
@@ -19,9 +19,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
-
+//添加
+publish {
+    userOrg = 'yangdg'//bintray.com用户名
+    groupId = 'com.yang'//jcenter上的路径
+    artifactId = 'recyclerAdapter'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'recyclerview Adapter'//描述，不重要
+    website = 'https://github.com/yangdg/recyclerAdapter'//网站，不重要；尽量模拟github上的地址
+}
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:recyclerview-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
 }
